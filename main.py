@@ -73,6 +73,9 @@ if __name__ == '__main__':
         if in_number >= 1000000000:
             print("Введенное число слишком велико.")
             continue
+        if in_number == 0:
+            play_wav('0.wav')
+            continue
         stack = []
         while in_number > 0:
             stack.append(in_number % 1000)
